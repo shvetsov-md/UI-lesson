@@ -3,27 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C2B5632A26F0D39E0055B51E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5632926F0D39E0055B51E /* AppDelegate.swift */; };
 		C2B5632C26F0D39E0055B51E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5632B26F0D39E0055B51E /* SceneDelegate.swift */; };
-		C2B5632E26F0D39E0055B51E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5632D26F0D39E0055B51E /* ViewController.swift */; };
+		C2B5632E26F0D39E0055B51E /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5632D26F0D39E0055B51E /* AuthorizationViewController.swift */; };
 		C2B5633126F0D39E0055B51E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B5632F26F0D39E0055B51E /* Main.storyboard */; };
-		C2B5633326F0D39F0055B51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B5633226F0D39F0055B51E /* Assets.xcassets */; };
 		C2B5633626F0D39F0055B51E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B5633426F0D39F0055B51E /* LaunchScreen.storyboard */; };
+		C2B5634226F0DB2D0055B51E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B5634126F0DB2D0055B51E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2B5632626F0D39E0055B51E /* VK project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B5632926F0D39E0055B51E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B5632B26F0D39E0055B51E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2B5632D26F0D39E0055B51E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2B5632D26F0D39E0055B51E /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		C2B5633026F0D39E0055B51E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C2B5633226F0D39F0055B51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B5633526F0D39F0055B51E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2B5633726F0D39F0055B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B5634126F0DB2D0055B51E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +58,29 @@
 			children = (
 				C2B5632926F0D39E0055B51E /* AppDelegate.swift */,
 				C2B5632B26F0D39E0055B51E /* SceneDelegate.swift */,
-				C2B5632D26F0D39E0055B51E /* ViewController.swift */,
-				C2B5632F26F0D39E0055B51E /* Main.storyboard */,
-				C2B5633226F0D39F0055B51E /* Assets.xcassets */,
+				C2B5634626F0DCB20055B51E /* Controllers */,
+				C2B5634526F0DC9E0055B51E /* View */,
 				C2B5633426F0D39F0055B51E /* LaunchScreen.storyboard */,
 				C2B5633726F0D39F0055B51E /* Info.plist */,
+				C2B5634126F0DB2D0055B51E /* Images.xcassets */,
 			);
 			path = "VK project";
+			sourceTree = "<group>";
+		};
+		C2B5634526F0DC9E0055B51E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2B5632F26F0D39E0055B51E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2B5634626F0DCB20055B51E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2B5632D26F0D39E0055B51E /* AuthorizationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +118,7 @@
 				};
 			};
 			buildConfigurationList = C2B5632126F0D39E0055B51E /* Build configuration list for PBXProject "VK project" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B5633626F0D39F0055B51E /* LaunchScreen.storyboard in Resources */,
-				C2B5633326F0D39F0055B51E /* Assets.xcassets in Resources */,
+				C2B5634226F0DB2D0055B51E /* Images.xcassets in Resources */,
 				C2B5633126F0D39E0055B51E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2B5632E26F0D39E0055B51E /* ViewController.swift in Sources */,
+				C2B5632E26F0D39E0055B51E /* AuthorizationViewController.swift in Sources */,
 				C2B5632A26F0D39E0055B51E /* AppDelegate.swift in Sources */,
 				C2B5632C26F0D39E0055B51E /* SceneDelegate.swift in Sources */,
 			);
